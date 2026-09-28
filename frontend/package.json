@@ -1,0 +1,39 @@
+{
+  "name": "tbm-ai-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:live": "VITE_API_MODE=live vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check:graph": "tsx src/features/runtime/graphReducer.check.ts",
+    "check:review": "tsx src/mocks/review.check.ts",
+    "check:runtime": "node src/features/runtime/useRuntimeEvents.check.mjs",
+    "check:transcript": "tsx src/features/runtime/transcript.check.ts",
+    "check:playbook": "tsx src/mocks/playbook.check.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.2",
+    "@xyflow/react": "^12.8.6",
+    "elkjs": "^0.10.0",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.6"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

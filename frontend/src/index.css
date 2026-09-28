@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sidebar: #1d1d1f;
+  --color-canvas: #f5f5f7;
+  --color-brand: #0071e3;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .inspector-glass {
+    background: #fff !important;
+    backdrop-filter: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-flow__node {
+    transition: none !important;
+  }
+}
+
+.react-flow__node-runtime {
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.react-flow__attribution {
+  opacity: 0.55;
+  font-size: 9px;
+}
+
+.react-flow__node {
+  transition: none;
+}
+
+@keyframes runtime-grow {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes runtime-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.runtime-node-born {
+  transform-origin: top center;
+  animation: runtime-grow 200ms var(--ease-out) both;
+}
+
+.runtime-edge-label {
+  animation: runtime-fade 160ms var(--ease-out) 80ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .runtime-node-born,
+  .runtime-edge-label {
+    animation: runtime-fade 160ms linear both;
+  }
+}
+
+html[data-density="compact"] {
+  font-size: 14px;
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+auth.json
+.credentials.yaml
+.pi/
+.dsh/
+*.log
+.vite/
+coverage/
