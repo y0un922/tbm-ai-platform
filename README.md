@@ -1,50 +1,26 @@
-# 盾构机 AI 多智能体协同平台
+# 盾构机多智能体协同 Demo
+
+设计文档：[`docs/Demo核心功能设计文档.md`](docs/Demo核心功能设计文档.md)
 
 ```
-TBM/
-  frontend/            Vite + React
-  backend/             Node HTTP + SSE，Agent 循环走本机 pi SDK
-  docs/                接口与运行视图说明
-  tbm_ai_prototype/    早期 HTML 原型，仅参考
+packages/shared/   前后端共用契约：事件协议、Agent 元数据、CollabHub 接口、事件流校验
+server/            Node 服务（开发中）；src/data 为场景数据，spike/ 为技术验证与样本录制脚本
+web/               前端（开发中）；dev/sample-run.jsonl 为真实运行录制的事件样本
 ```
 
-模型凭证在本机 `~/.pi/agent`，**不进仓库**。未 `pi /login` 时 live Run 会失败。
-
-## 启动
-
-需要 Node 22+。两个终端：
+需要 Node 22+。模型为 DeepSeek V4.1 Flash，凭证读环境变量 `DEEPSEEK_API_KEY`，或本机 pi 的 `~/.pi/agent/auth.json`，**不进仓库**。
 
 ```bash
-# 1. 后端
-cd backend
 npm install
-npm run dev          # http://127.0.0.1:8787/api
+
+npm run check:data -w @tbm/server       # 场景数据自洽校验（不调模型）
+npm run check:sample -w @tbm/shared     # 校验事件样本是否符合契约（不调模型）
+npm run typecheck -w @tbm/shared
+npm run typecheck -w @tbm/server
+
+npm run spike:concurrency -w @tbm/server   # 5 路并发验证（调模型）
+npm run spike:debate -w @tbm/server        # 完整会商，控制台输出过程和协作统计（调模型）
+npm run record:sample -w @tbm/server       # 同上，并重新录制 web/dev/sample-run.jsonl
 ```
 
-```bash
-# 2. 前端（接后端）
-cd frontend
-npm install
-npm run dev:live     # http://localhost:5173 ，/api 代理到 8787
-```
-
-浏览器打开 http://localhost:5173 ，进 **AI 协同** → 开始分析。不要出现「演示数据 / 未连接后端」。
-
-只看界面、不打模型：
-
-```bash
-cd frontend && npm run dev    # Mock，不必启后端
-```
-
-## 自检（不打模型）
-
-```bash
-cd frontend && npm run check:graph && npm run check:review && npm run check:runtime && npm run check:playbook && npm run check:transcript
-cd backend && npm run check
-```
-
-## 说明
-
-- 接口：[`docs/api.md`](docs/api.md)
-- 后端契约：[`backend/README.md`](backend/README.md)
-- 不向设备下发控制指令
+平台只给建议，不向设备下发控制指令。

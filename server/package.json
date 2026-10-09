@@ -1,0 +1,22 @@
+{
+  "name": "@tbm/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "check:data": "tsx src/data/scenario.check.ts",
+    "spike:concurrency": "tsx spike/concurrency.ts",
+    "spike:debate": "tsx spike/debate.ts",
+    "record:sample": "tsx spike/debate.ts --out ../web/dev/sample-run.jsonl"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "^1.1.0",
+    "@earendil-works/pi-ai": "^1.1.0",
+    "typebox": "^1.3.27"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

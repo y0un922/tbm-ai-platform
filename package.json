@@ -1,0 +1,6 @@
+{
+  "name": "tbm-demo",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/shared", "server"]
+}
