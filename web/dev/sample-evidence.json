@@ -1,0 +1,1943 @@
+{
+ "E1": {
+  "id": "E1",
+  "owner": "cutter",
+  "kind": "data",
+  "label": "刀盘监测 500–540",
+  "summary": "刀盘监测 500–540，共 41 环；磨损报警阈值 0.08 mm/环",
+  "rows": [
+   {
+    "ring": 500,
+    "wear_mm": 0.02,
+    "temp_c": 49.6
+   },
+   {
+    "ring": 501,
+    "wear_mm": 0.02,
+    "temp_c": 49.6
+   },
+   {
+    "ring": 502,
+    "wear_mm": 0.02,
+    "temp_c": 48.4
+   },
+   {
+    "ring": 503,
+    "wear_mm": 0.02,
+    "temp_c": 46.2
+   },
+   {
+    "ring": 504,
+    "wear_mm": 0.02,
+    "temp_c": 49.3
+   },
+   {
+    "ring": 505,
+    "wear_mm": 0.02,
+    "temp_c": 46.9
+   },
+   {
+    "ring": 506,
+    "wear_mm": 0.02,
+    "temp_c": 47.6
+   },
+   {
+    "ring": 507,
+    "wear_mm": 0.02,
+    "temp_c": 46.6
+   },
+   {
+    "ring": 508,
+    "wear_mm": 0.02,
+    "temp_c": 46.4
+   },
+   {
+    "ring": 509,
+    "wear_mm": 0.02,
+    "temp_c": 47.4
+   },
+   {
+    "ring": 510,
+    "wear_mm": 0.02,
+    "temp_c": 49.1
+   },
+   {
+    "ring": 511,
+    "wear_mm": 0.02,
+    "temp_c": 47.5
+   },
+   {
+    "ring": 512,
+    "wear_mm": 0.02,
+    "temp_c": 49.5
+   },
+   {
+    "ring": 513,
+    "wear_mm": 0.02,
+    "temp_c": 47.3
+   },
+   {
+    "ring": 514,
+    "wear_mm": 0.02,
+    "temp_c": 48.7
+   },
+   {
+    "ring": 515,
+    "wear_mm": 0.02,
+    "temp_c": 48.4
+   },
+   {
+    "ring": 516,
+    "wear_mm": 0.02,
+    "temp_c": 48.5
+   },
+   {
+    "ring": 517,
+    "wear_mm": 0.02,
+    "temp_c": 49.3
+   },
+   {
+    "ring": 518,
+    "wear_mm": 0.02,
+    "temp_c": 47.5
+   },
+   {
+    "ring": 519,
+    "wear_mm": 0.02,
+    "temp_c": 48.8
+   },
+   {
+    "ring": 520,
+    "wear_mm": 0.02,
+    "temp_c": 49.8
+   },
+   {
+    "ring": 521,
+    "wear_mm": 0.02,
+    "temp_c": 46.3
+   },
+   {
+    "ring": 522,
+    "wear_mm": 0.02,
+    "temp_c": 47.8
+   },
+   {
+    "ring": 523,
+    "wear_mm": 0.02,
+    "temp_c": 48.3
+   },
+   {
+    "ring": 524,
+    "wear_mm": 0.02,
+    "temp_c": 49.3
+   },
+   {
+    "ring": 525,
+    "wear_mm": 0.03,
+    "temp_c": 47.5
+   },
+   {
+    "ring": 526,
+    "wear_mm": 0.03,
+    "temp_c": 47.8
+   },
+   {
+    "ring": 527,
+    "wear_mm": 0.03,
+    "temp_c": 46.1
+   },
+   {
+    "ring": 528,
+    "wear_mm": 0.03,
+    "temp_c": 48.8
+   },
+   {
+    "ring": 529,
+    "wear_mm": 0.03,
+    "temp_c": 49.1
+   },
+   {
+    "ring": 530,
+    "wear_mm": 0.03,
+    "temp_c": 47
+   },
+   {
+    "ring": 531,
+    "wear_mm": 0.03,
+    "temp_c": 47.8
+   },
+   {
+    "ring": 532,
+    "wear_mm": 0.03,
+    "temp_c": 47.5
+   },
+   {
+    "ring": 533,
+    "wear_mm": 0.03,
+    "temp_c": 46.7
+   },
+   {
+    "ring": 534,
+    "wear_mm": 0.03,
+    "temp_c": 49.4
+   },
+   {
+    "ring": 535,
+    "wear_mm": 0.03,
+    "temp_c": 46.3
+   },
+   {
+    "ring": 536,
+    "wear_mm": 0.03,
+    "temp_c": 47.2
+   },
+   {
+    "ring": 537,
+    "wear_mm": 0.03,
+    "temp_c": 46.2
+   },
+   {
+    "ring": 538,
+    "wear_mm": 0.03,
+    "temp_c": 47
+   },
+   {
+    "ring": 539,
+    "wear_mm": 0.03,
+    "temp_c": 48.6
+   },
+   {
+    "ring": 540,
+    "wear_mm": 0.03,
+    "temp_c": 49.3
+   }
+  ],
+  "chart": {
+   "type": "line",
+   "x": {
+    "key": "ring",
+    "label": "环号"
+   },
+   "series": [
+    {
+     "key": "wear_mm",
+     "label": "磨损速率",
+     "unit": "mm/环"
+    },
+    {
+     "key": "temp_c",
+     "label": "刀具温度",
+     "unit": "°C"
+    }
+   ],
+   "rows": [
+    {
+     "ring": 500,
+     "wear_mm": 0.02,
+     "temp_c": 49.6
+    },
+    {
+     "ring": 501,
+     "wear_mm": 0.02,
+     "temp_c": 49.6
+    },
+    {
+     "ring": 502,
+     "wear_mm": 0.02,
+     "temp_c": 48.4
+    },
+    {
+     "ring": 503,
+     "wear_mm": 0.02,
+     "temp_c": 46.2
+    },
+    {
+     "ring": 504,
+     "wear_mm": 0.02,
+     "temp_c": 49.3
+    },
+    {
+     "ring": 505,
+     "wear_mm": 0.02,
+     "temp_c": 46.9
+    },
+    {
+     "ring": 506,
+     "wear_mm": 0.02,
+     "temp_c": 47.6
+    },
+    {
+     "ring": 507,
+     "wear_mm": 0.02,
+     "temp_c": 46.6
+    },
+    {
+     "ring": 508,
+     "wear_mm": 0.02,
+     "temp_c": 46.4
+    },
+    {
+     "ring": 509,
+     "wear_mm": 0.02,
+     "temp_c": 47.4
+    },
+    {
+     "ring": 510,
+     "wear_mm": 0.02,
+     "temp_c": 49.1
+    },
+    {
+     "ring": 511,
+     "wear_mm": 0.02,
+     "temp_c": 47.5
+    },
+    {
+     "ring": 512,
+     "wear_mm": 0.02,
+     "temp_c": 49.5
+    },
+    {
+     "ring": 513,
+     "wear_mm": 0.02,
+     "temp_c": 47.3
+    },
+    {
+     "ring": 514,
+     "wear_mm": 0.02,
+     "temp_c": 48.7
+    },
+    {
+     "ring": 515,
+     "wear_mm": 0.02,
+     "temp_c": 48.4
+    },
+    {
+     "ring": 516,
+     "wear_mm": 0.02,
+     "temp_c": 48.5
+    },
+    {
+     "ring": 517,
+     "wear_mm": 0.02,
+     "temp_c": 49.3
+    },
+    {
+     "ring": 518,
+     "wear_mm": 0.02,
+     "temp_c": 47.5
+    },
+    {
+     "ring": 519,
+     "wear_mm": 0.02,
+     "temp_c": 48.8
+    },
+    {
+     "ring": 520,
+     "wear_mm": 0.02,
+     "temp_c": 49.8
+    },
+    {
+     "ring": 521,
+     "wear_mm": 0.02,
+     "temp_c": 46.3
+    },
+    {
+     "ring": 522,
+     "wear_mm": 0.02,
+     "temp_c": 47.8
+    },
+    {
+     "ring": 523,
+     "wear_mm": 0.02,
+     "temp_c": 48.3
+    },
+    {
+     "ring": 524,
+     "wear_mm": 0.02,
+     "temp_c": 49.3
+    },
+    {
+     "ring": 525,
+     "wear_mm": 0.03,
+     "temp_c": 47.5
+    },
+    {
+     "ring": 526,
+     "wear_mm": 0.03,
+     "temp_c": 47.8
+    },
+    {
+     "ring": 527,
+     "wear_mm": 0.03,
+     "temp_c": 46.1
+    },
+    {
+     "ring": 528,
+     "wear_mm": 0.03,
+     "temp_c": 48.8
+    },
+    {
+     "ring": 529,
+     "wear_mm": 0.03,
+     "temp_c": 49.1
+    },
+    {
+     "ring": 530,
+     "wear_mm": 0.03,
+     "temp_c": 47
+    },
+    {
+     "ring": 531,
+     "wear_mm": 0.03,
+     "temp_c": 47.8
+    },
+    {
+     "ring": 532,
+     "wear_mm": 0.03,
+     "temp_c": 47.5
+    },
+    {
+     "ring": 533,
+     "wear_mm": 0.03,
+     "temp_c": 46.7
+    },
+    {
+     "ring": 534,
+     "wear_mm": 0.03,
+     "temp_c": 49.4
+    },
+    {
+     "ring": 535,
+     "wear_mm": 0.03,
+     "temp_c": 46.3
+    },
+    {
+     "ring": 536,
+     "wear_mm": 0.03,
+     "temp_c": 47.2
+    },
+    {
+     "ring": 537,
+     "wear_mm": 0.03,
+     "temp_c": 46.2
+    },
+    {
+     "ring": 538,
+     "wear_mm": 0.03,
+     "temp_c": 47
+    },
+    {
+     "ring": 539,
+     "wear_mm": 0.03,
+     "temp_c": 48.6
+    },
+    {
+     "ring": 540,
+     "wear_mm": 0.03,
+     "temp_c": 49.3
+    }
+   ]
+  }
+ },
+ "E2": {
+  "id": "E2",
+  "owner": "boring",
+  "kind": "data",
+  "label": "掘进参数 500–540",
+  "summary": "掘进参数 500–540，共 41 环",
+  "rows": [
+   {
+    "ring": 500,
+    "speed": 51.9,
+    "penetration": 34.6,
+    "rpm": 1.5,
+    "torque": 3181,
+    "thrust": 15870
+   },
+   {
+    "ring": 501,
+    "speed": 52.3,
+    "penetration": 34.9,
+    "rpm": 1.5,
+    "torque": 3201,
+    "thrust": 15762
+   },
+   {
+    "ring": 502,
+    "speed": 52.6,
+    "penetration": 35.1,
+    "rpm": 1.5,
+    "torque": 3136,
+    "thrust": 16059
+   },
+   {
+    "ring": 503,
+    "speed": 52.1,
+    "penetration": 34.7,
+    "rpm": 1.5,
+    "torque": 3214,
+    "thrust": 15829
+   },
+   {
+    "ring": 504,
+    "speed": 52.2,
+    "penetration": 34.8,
+    "rpm": 1.5,
+    "torque": 3181,
+    "thrust": 15686
+   },
+   {
+    "ring": 505,
+    "speed": 51.8,
+    "penetration": 34.5,
+    "rpm": 1.5,
+    "torque": 3189,
+    "thrust": 16280
+   },
+   {
+    "ring": 506,
+    "speed": 51.5,
+    "penetration": 34.3,
+    "rpm": 1.5,
+    "torque": 3168,
+    "thrust": 15904
+   },
+   {
+    "ring": 507,
+    "speed": 51.6,
+    "penetration": 34.4,
+    "rpm": 1.5,
+    "torque": 3264,
+    "thrust": 16035
+   },
+   {
+    "ring": 508,
+    "speed": 51.9,
+    "penetration": 34.6,
+    "rpm": 1.5,
+    "torque": 3189,
+    "thrust": 16191
+   },
+   {
+    "ring": 509,
+    "speed": 51.9,
+    "penetration": 34.6,
+    "rpm": 1.5,
+    "torque": 3245,
+    "thrust": 15718
+   },
+   {
+    "ring": 510,
+    "speed": 51.7,
+    "penetration": 34.5,
+    "rpm": 1.5,
+    "torque": 3167,
+    "thrust": 16217
+   },
+   {
+    "ring": 511,
+    "speed": 52.3,
+    "penetration": 34.9,
+    "rpm": 1.5,
+    "torque": 3173,
+    "thrust": 15763
+   },
+   {
+    "ring": 512,
+    "speed": 51.7,
+    "penetration": 34.5,
+    "rpm": 1.5,
+    "torque": 3201,
+    "thrust": 15839
+   },
+   {
+    "ring": 513,
+    "speed": 51.4,
+    "penetration": 34.3,
+    "rpm": 1.5,
+    "torque": 3216,
+    "thrust": 15826
+   },
+   {
+    "ring": 514,
+    "speed": 51.8,
+    "penetration": 34.5,
+    "rpm": 1.5,
+    "torque": 3147,
+    "thrust": 16075
+   },
+   {
+    "ring": 515,
+    "speed": 52.7,
+    "penetration": 35.1,
+    "rpm": 1.5,
+    "torque": 3257,
+    "thrust": 15852
+   },
+   {
+    "ring": 516,
+    "speed": 51.3,
+    "penetration": 34.2,
+    "rpm": 1.5,
+    "torque": 3188,
+    "thrust": 16135
+   },
+   {
+    "ring": 517,
+    "speed": 52.4,
+    "penetration": 34.9,
+    "rpm": 1.5,
+    "torque": 3144,
+    "thrust": 15885
+   },
+   {
+    "ring": 518,
+    "speed": 51.6,
+    "penetration": 34.4,
+    "rpm": 1.5,
+    "torque": 3210,
+    "thrust": 16175
+   },
+   {
+    "ring": 519,
+    "speed": 51.6,
+    "penetration": 34.4,
+    "rpm": 1.5,
+    "torque": 3308,
+    "thrust": 16418
+   },
+   {
+    "ring": 520,
+    "speed": 51.9,
+    "penetration": 34.6,
+    "rpm": 1.5,
+    "torque": 3446,
+    "thrust": 16452
+   },
+   {
+    "ring": 521,
+    "speed": 40.3,
+    "penetration": 26.9,
+    "rpm": 1.5,
+    "torque": 3587,
+    "thrust": 17381
+   },
+   {
+    "ring": 522,
+    "speed": 40,
+    "penetration": 26.7,
+    "rpm": 1.5,
+    "torque": 3683,
+    "thrust": 18224
+   },
+   {
+    "ring": 523,
+    "speed": 40.1,
+    "penetration": 26.7,
+    "rpm": 1.5,
+    "torque": 3759,
+    "thrust": 17947
+   },
+   {
+    "ring": 524,
+    "speed": 39.6,
+    "penetration": 26.4,
+    "rpm": 1.5,
+    "torque": 3881,
+    "thrust": 18119
+   },
+   {
+    "ring": 525,
+    "speed": 34.3,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3898,
+    "thrust": 18709
+   },
+   {
+    "ring": 526,
+    "speed": 34.4,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3888,
+    "thrust": 18571
+   },
+   {
+    "ring": 527,
+    "speed": 34.4,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3850,
+    "thrust": 18470
+   },
+   {
+    "ring": 528,
+    "speed": 33.8,
+    "penetration": 22.5,
+    "rpm": 1.5,
+    "torque": 3887,
+    "thrust": 18413
+   },
+   {
+    "ring": 529,
+    "speed": 34.3,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3769,
+    "thrust": 18107
+   },
+   {
+    "ring": 530,
+    "speed": 33.8,
+    "penetration": 22.5,
+    "rpm": 1.5,
+    "torque": 3915,
+    "thrust": 18292
+   },
+   {
+    "ring": 531,
+    "speed": 34.5,
+    "penetration": 23,
+    "rpm": 1.5,
+    "torque": 3808,
+    "thrust": 18112
+   },
+   {
+    "ring": 532,
+    "speed": 33.7,
+    "penetration": 22.5,
+    "rpm": 1.5,
+    "torque": 3817,
+    "thrust": 18557
+   },
+   {
+    "ring": 533,
+    "speed": 33.9,
+    "penetration": 22.6,
+    "rpm": 1.5,
+    "torque": 3890,
+    "thrust": 18710
+   },
+   {
+    "ring": 534,
+    "speed": 34.3,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3845,
+    "thrust": 18094
+   },
+   {
+    "ring": 535,
+    "speed": 34.5,
+    "penetration": 23,
+    "rpm": 1.5,
+    "torque": 3868,
+    "thrust": 18141
+   },
+   {
+    "ring": 536,
+    "speed": 34.2,
+    "penetration": 22.8,
+    "rpm": 1.5,
+    "torque": 3776,
+    "thrust": 18366
+   },
+   {
+    "ring": 537,
+    "speed": 34.5,
+    "penetration": 23,
+    "rpm": 1.5,
+    "torque": 3848,
+    "thrust": 18159
+   },
+   {
+    "ring": 538,
+    "speed": 34.3,
+    "penetration": 22.9,
+    "rpm": 1.5,
+    "torque": 3771,
+    "thrust": 18189
+   },
+   {
+    "ring": 539,
+    "speed": 33.5,
+    "penetration": 22.3,
+    "rpm": 1.5,
+    "torque": 3826,
+    "thrust": 18363
+   },
+   {
+    "ring": 540,
+    "speed": 34.2,
+    "penetration": 22.8,
+    "rpm": 1.5,
+    "torque": 3885,
+    "thrust": 18034
+   }
+  ],
+  "chart": {
+   "type": "line",
+   "x": {
+    "key": "ring",
+    "label": "环号"
+   },
+   "series": [
+    {
+     "key": "speed",
+     "label": "推进速度",
+     "unit": "mm/min"
+    },
+    {
+     "key": "torque",
+     "label": "刀盘扭矩",
+     "unit": "kN·m"
+    }
+   ],
+   "rows": [
+    {
+     "ring": 500,
+     "speed": 51.9,
+     "torque": 3181
+    },
+    {
+     "ring": 501,
+     "speed": 52.3,
+     "torque": 3201
+    },
+    {
+     "ring": 502,
+     "speed": 52.6,
+     "torque": 3136
+    },
+    {
+     "ring": 503,
+     "speed": 52.1,
+     "torque": 3214
+    },
+    {
+     "ring": 504,
+     "speed": 52.2,
+     "torque": 3181
+    },
+    {
+     "ring": 505,
+     "speed": 51.8,
+     "torque": 3189
+    },
+    {
+     "ring": 506,
+     "speed": 51.5,
+     "torque": 3168
+    },
+    {
+     "ring": 507,
+     "speed": 51.6,
+     "torque": 3264
+    },
+    {
+     "ring": 508,
+     "speed": 51.9,
+     "torque": 3189
+    },
+    {
+     "ring": 509,
+     "speed": 51.9,
+     "torque": 3245
+    },
+    {
+     "ring": 510,
+     "speed": 51.7,
+     "torque": 3167
+    },
+    {
+     "ring": 511,
+     "speed": 52.3,
+     "torque": 3173
+    },
+    {
+     "ring": 512,
+     "speed": 51.7,
+     "torque": 3201
+    },
+    {
+     "ring": 513,
+     "speed": 51.4,
+     "torque": 3216
+    },
+    {
+     "ring": 514,
+     "speed": 51.8,
+     "torque": 3147
+    },
+    {
+     "ring": 515,
+     "speed": 52.7,
+     "torque": 3257
+    },
+    {
+     "ring": 516,
+     "speed": 51.3,
+     "torque": 3188
+    },
+    {
+     "ring": 517,
+     "speed": 52.4,
+     "torque": 3144
+    },
+    {
+     "ring": 518,
+     "speed": 51.6,
+     "torque": 3210
+    },
+    {
+     "ring": 519,
+     "speed": 51.6,
+     "torque": 3308
+    },
+    {
+     "ring": 520,
+     "speed": 51.9,
+     "torque": 3446
+    },
+    {
+     "ring": 521,
+     "speed": 40.3,
+     "torque": 3587
+    },
+    {
+     "ring": 522,
+     "speed": 40,
+     "torque": 3683
+    },
+    {
+     "ring": 523,
+     "speed": 40.1,
+     "torque": 3759
+    },
+    {
+     "ring": 524,
+     "speed": 39.6,
+     "torque": 3881
+    },
+    {
+     "ring": 525,
+     "speed": 34.3,
+     "torque": 3898
+    },
+    {
+     "ring": 526,
+     "speed": 34.4,
+     "torque": 3888
+    },
+    {
+     "ring": 527,
+     "speed": 34.4,
+     "torque": 3850
+    },
+    {
+     "ring": 528,
+     "speed": 33.8,
+     "torque": 3887
+    },
+    {
+     "ring": 529,
+     "speed": 34.3,
+     "torque": 3769
+    },
+    {
+     "ring": 530,
+     "speed": 33.8,
+     "torque": 3915
+    },
+    {
+     "ring": 531,
+     "speed": 34.5,
+     "torque": 3808
+    },
+    {
+     "ring": 532,
+     "speed": 33.7,
+     "torque": 3817
+    },
+    {
+     "ring": 533,
+     "speed": 33.9,
+     "torque": 3890
+    },
+    {
+     "ring": 534,
+     "speed": 34.3,
+     "torque": 3845
+    },
+    {
+     "ring": 535,
+     "speed": 34.5,
+     "torque": 3868
+    },
+    {
+     "ring": 536,
+     "speed": 34.2,
+     "torque": 3776
+    },
+    {
+     "ring": 537,
+     "speed": 34.5,
+     "torque": 3848
+    },
+    {
+     "ring": 538,
+     "speed": 34.3,
+     "torque": 3771
+    },
+    {
+     "ring": 539,
+     "speed": 33.5,
+     "torque": 3826
+    },
+    {
+     "ring": 540,
+     "speed": 34.2,
+     "torque": 3885
+    }
+   ]
+  }
+ },
+ "E3": {
+  "id": "E3",
+  "owner": "geology",
+  "kind": "data",
+  "label": "地质资料 500–540",
+  "summary": "地质资料 500–540，共 41 环",
+  "rows": [
+   {
+    "ring": 500,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 501,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 502,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 503,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 504,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 505,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 506,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 507,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 508,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 509,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 510,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 511,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 512,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 513,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 514,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 515,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 516,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 517,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 518,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 519,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 520,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 521,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 522,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 523,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 524,
+    "stratum": "粉质黏土",
+    "gravel_pct": 0
+   },
+   {
+    "ring": 525,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 10
+   },
+   {
+    "ring": 526,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 12
+   },
+   {
+    "ring": 527,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 13
+   },
+   {
+    "ring": 528,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 15
+   },
+   {
+    "ring": 529,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 17
+   },
+   {
+    "ring": 530,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 18
+   },
+   {
+    "ring": 531,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 20
+   },
+   {
+    "ring": 532,
+    "stratum": "粉质黏土夹卵石",
+    "gravel_pct": 22
+   },
+   {
+    "ring": 533,
+    "stratum": "含砂卵石",
+    "gravel_pct": 23
+   },
+   {
+    "ring": 534,
+    "stratum": "含砂卵石",
+    "gravel_pct": 25
+   },
+   {
+    "ring": 535,
+    "stratum": "含砂卵石",
+    "gravel_pct": 27
+   },
+   {
+    "ring": 536,
+    "stratum": "含砂卵石",
+    "gravel_pct": 28
+   },
+   {
+    "ring": 537,
+    "stratum": "含砂卵石",
+    "gravel_pct": 30
+   },
+   {
+    "ring": 538,
+    "stratum": "含砂卵石",
+    "gravel_pct": 32
+   },
+   {
+    "ring": 539,
+    "stratum": "含砂卵石",
+    "gravel_pct": 33
+   },
+   {
+    "ring": 540,
+    "stratum": "含砂卵石",
+    "gravel_pct": 35
+   }
+  ],
+  "chart": {
+   "type": "step",
+   "x": {
+    "key": "ring",
+    "label": "环号"
+   },
+   "series": [
+    {
+     "key": "gravel_pct",
+     "label": "卵石含量",
+     "unit": "%"
+    }
+   ],
+   "rows": [
+    {
+     "ring": 500,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 501,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 502,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 503,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 504,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 505,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 506,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 507,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 508,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 509,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 510,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 511,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 512,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 513,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 514,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 515,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 516,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 517,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 518,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 519,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 520,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 521,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 522,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 523,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 524,
+     "gravel_pct": 0
+    },
+    {
+     "ring": 525,
+     "gravel_pct": 10
+    },
+    {
+     "ring": 526,
+     "gravel_pct": 12
+    },
+    {
+     "ring": 527,
+     "gravel_pct": 13
+    },
+    {
+     "ring": 528,
+     "gravel_pct": 15
+    },
+    {
+     "ring": 529,
+     "gravel_pct": 17
+    },
+    {
+     "ring": 530,
+     "gravel_pct": 18
+    },
+    {
+     "ring": 531,
+     "gravel_pct": 20
+    },
+    {
+     "ring": 532,
+     "gravel_pct": 22
+    },
+    {
+     "ring": 533,
+     "gravel_pct": 23
+    },
+    {
+     "ring": 534,
+     "gravel_pct": 25
+    },
+    {
+     "ring": 535,
+     "gravel_pct": 27
+    },
+    {
+     "ring": 536,
+     "gravel_pct": 28
+    },
+    {
+     "ring": 537,
+     "gravel_pct": 30
+    },
+    {
+     "ring": 538,
+     "gravel_pct": 32
+    },
+    {
+     "ring": 539,
+     "gravel_pct": 33
+    },
+    {
+     "ring": 540,
+     "gravel_pct": 35
+    }
+   ]
+  }
+ },
+ "E4": {
+  "id": "E4",
+  "owner": "muck",
+  "kind": "data",
+  "label": "泡沫系统 500–540",
+  "summary": "泡沫系统 500–540，共 41 环",
+  "rows": [
+   {
+    "ring": 500,
+    "solution_flow": 62.7,
+    "fer": 10,
+    "fir_pct": 39
+   },
+   {
+    "ring": 501,
+    "solution_flow": 63.2,
+    "fer": 10,
+    "fir_pct": 39
+   },
+   {
+    "ring": 502,
+    "solution_flow": 63.5,
+    "fer": 10,
+    "fir_pct": 39
+   },
+   {
+    "ring": 503,
+    "solution_flow": 65.2,
+    "fer": 10,
+    "fir_pct": 40.4
+   },
+   {
+    "ring": 504,
+    "solution_flow": 64.2,
+    "fer": 10,
+    "fir_pct": 39.7
+   },
+   {
+    "ring": 505,
+    "solution_flow": 63.5,
+    "fer": 10,
+    "fir_pct": 39.6
+   },
+   {
+    "ring": 506,
+    "solution_flow": 64.6,
+    "fer": 10,
+    "fir_pct": 40.5
+   },
+   {
+    "ring": 507,
+    "solution_flow": 64.5,
+    "fer": 10,
+    "fir_pct": 40.4
+   },
+   {
+    "ring": 508,
+    "solution_flow": 62.9,
+    "fer": 10,
+    "fir_pct": 39.1
+   },
+   {
+    "ring": 509,
+    "solution_flow": 63,
+    "fer": 10,
+    "fir_pct": 39.2
+   },
+   {
+    "ring": 510,
+    "solution_flow": 63,
+    "fer": 10,
+    "fir_pct": 39.3
+   },
+   {
+    "ring": 511,
+    "solution_flow": 64.1,
+    "fer": 10,
+    "fir_pct": 39.6
+   },
+   {
+    "ring": 512,
+    "solution_flow": 64.5,
+    "fer": 10,
+    "fir_pct": 40.3
+   },
+   {
+    "ring": 513,
+    "solution_flow": 65.1,
+    "fer": 10,
+    "fir_pct": 40.9
+   },
+   {
+    "ring": 514,
+    "solution_flow": 63.2,
+    "fer": 10,
+    "fir_pct": 39.4
+   },
+   {
+    "ring": 515,
+    "solution_flow": 64.1,
+    "fer": 10,
+    "fir_pct": 39.3
+   },
+   {
+    "ring": 516,
+    "solution_flow": 64.1,
+    "fer": 10,
+    "fir_pct": 40.3
+   },
+   {
+    "ring": 517,
+    "solution_flow": 64,
+    "fer": 10,
+    "fir_pct": 39.4
+   },
+   {
+    "ring": 518,
+    "solution_flow": 24.9,
+    "fer": 10,
+    "fir_pct": 15.6
+   },
+   {
+    "ring": 519,
+    "solution_flow": 25.3,
+    "fer": 10,
+    "fir_pct": 15.8
+   },
+   {
+    "ring": 520,
+    "solution_flow": 24.9,
+    "fer": 10,
+    "fir_pct": 15.5
+   },
+   {
+    "ring": 521,
+    "solution_flow": 24.9,
+    "fer": 10,
+    "fir_pct": 19.9
+   },
+   {
+    "ring": 522,
+    "solution_flow": 25,
+    "fer": 10,
+    "fir_pct": 20.2
+   },
+   {
+    "ring": 523,
+    "solution_flow": 25.2,
+    "fer": 10,
+    "fir_pct": 20.3
+   },
+   {
+    "ring": 524,
+    "solution_flow": 25.4,
+    "fer": 10,
+    "fir_pct": 20.7
+   },
+   {
+    "ring": 525,
+    "solution_flow": 25.2,
+    "fer": 10,
+    "fir_pct": 23.7
+   },
+   {
+    "ring": 526,
+    "solution_flow": 24.8,
+    "fer": 10,
+    "fir_pct": 23.3
+   },
+   {
+    "ring": 527,
+    "solution_flow": 25.3,
+    "fer": 10,
+    "fir_pct": 23.7
+   },
+   {
+    "ring": 528,
+    "solution_flow": 25.5,
+    "fer": 10,
+    "fir_pct": 24.4
+   },
+   {
+    "ring": 529,
+    "solution_flow": 24.6,
+    "fer": 10,
+    "fir_pct": 23.2
+   },
+   {
+    "ring": 530,
+    "solution_flow": 25.1,
+    "fer": 10,
+    "fir_pct": 24
+   },
+   {
+    "ring": 531,
+    "solution_flow": 24.8,
+    "fer": 10,
+    "fir_pct": 23.2
+   },
+   {
+    "ring": 532,
+    "solution_flow": 25.2,
+    "fer": 10,
+    "fir_pct": 24.1
+   },
+   {
+    "ring": 533,
+    "solution_flow": 25.3,
+    "fer": 10,
+    "fir_pct": 24.1
+   },
+   {
+    "ring": 534,
+    "solution_flow": 25.1,
+    "fer": 10,
+    "fir_pct": 23.6
+   },
+   {
+    "ring": 535,
+    "solution_flow": 24.5,
+    "fer": 10,
+    "fir_pct": 22.9
+   },
+   {
+    "ring": 536,
+    "solution_flow": 25.2,
+    "fer": 10,
+    "fir_pct": 23.8
+   },
+   {
+    "ring": 537,
+    "solution_flow": 25.1,
+    "fer": 10,
+    "fir_pct": 23.5
+   },
+   {
+    "ring": 538,
+    "solution_flow": 25.2,
+    "fer": 10,
+    "fir_pct": 23.7
+   },
+   {
+    "ring": 539,
+    "solution_flow": 25.1,
+    "fer": 10,
+    "fir_pct": 24.2
+   },
+   {
+    "ring": 540,
+    "solution_flow": 25.1,
+    "fer": 10,
+    "fir_pct": 23.7
+   }
+  ],
+  "chart": {
+   "type": "line",
+   "x": {
+    "key": "ring",
+    "label": "环号"
+   },
+   "series": [
+    {
+     "key": "solution_flow",
+     "label": "原液流量",
+     "unit": "L/min"
+    },
+    {
+     "key": "fir_pct",
+     "label": "FIR",
+     "unit": "%"
+    }
+   ],
+   "rows": [
+    {
+     "ring": 500,
+     "solution_flow": 62.7,
+     "fir_pct": 39
+    },
+    {
+     "ring": 501,
+     "solution_flow": 63.2,
+     "fir_pct": 39
+    },
+    {
+     "ring": 502,
+     "solution_flow": 63.5,
+     "fir_pct": 39
+    },
+    {
+     "ring": 503,
+     "solution_flow": 65.2,
+     "fir_pct": 40.4
+    },
+    {
+     "ring": 504,
+     "solution_flow": 64.2,
+     "fir_pct": 39.7
+    },
+    {
+     "ring": 505,
+     "solution_flow": 63.5,
+     "fir_pct": 39.6
+    },
+    {
+     "ring": 506,
+     "solution_flow": 64.6,
+     "fir_pct": 40.5
+    },
+    {
+     "ring": 507,
+     "solution_flow": 64.5,
+     "fir_pct": 40.4
+    },
+    {
+     "ring": 508,
+     "solution_flow": 62.9,
+     "fir_pct": 39.1
+    },
+    {
+     "ring": 509,
+     "solution_flow": 63,
+     "fir_pct": 39.2
+    },
+    {
+     "ring": 510,
+     "solution_flow": 63,
+     "fir_pct": 39.3
+    },
+    {
+     "ring": 511,
+     "solution_flow": 64.1,
+     "fir_pct": 39.6
+    },
+    {
+     "ring": 512,
+     "solution_flow": 64.5,
+     "fir_pct": 40.3
+    },
+    {
+     "ring": 513,
+     "solution_flow": 65.1,
+     "fir_pct": 40.9
+    },
+    {
+     "ring": 514,
+     "solution_flow": 63.2,
+     "fir_pct": 39.4
+    },
+    {
+     "ring": 515,
+     "solution_flow": 64.1,
+     "fir_pct": 39.3
+    },
+    {
+     "ring": 516,
+     "solution_flow": 64.1,
+     "fir_pct": 40.3
+    },
+    {
+     "ring": 517,
+     "solution_flow": 64,
+     "fir_pct": 39.4
+    },
+    {
+     "ring": 518,
+     "solution_flow": 24.9,
+     "fir_pct": 15.6
+    },
+    {
+     "ring": 519,
+     "solution_flow": 25.3,
+     "fir_pct": 15.8
+    },
+    {
+     "ring": 520,
+     "solution_flow": 24.9,
+     "fir_pct": 15.5
+    },
+    {
+     "ring": 521,
+     "solution_flow": 24.9,
+     "fir_pct": 19.9
+    },
+    {
+     "ring": 522,
+     "solution_flow": 25,
+     "fir_pct": 20.2
+    },
+    {
+     "ring": 523,
+     "solution_flow": 25.2,
+     "fir_pct": 20.3
+    },
+    {
+     "ring": 524,
+     "solution_flow": 25.4,
+     "fir_pct": 20.7
+    },
+    {
+     "ring": 525,
+     "solution_flow": 25.2,
+     "fir_pct": 23.7
+    },
+    {
+     "ring": 526,
+     "solution_flow": 24.8,
+     "fir_pct": 23.3
+    },
+    {
+     "ring": 527,
+     "solution_flow": 25.3,
+     "fir_pct": 23.7
+    },
+    {
+     "ring": 528,
+     "solution_flow": 25.5,
+     "fir_pct": 24.4
+    },
+    {
+     "ring": 529,
+     "solution_flow": 24.6,
+     "fir_pct": 23.2
+    },
+    {
+     "ring": 530,
+     "solution_flow": 25.1,
+     "fir_pct": 24
+    },
+    {
+     "ring": 531,
+     "solution_flow": 24.8,
+     "fir_pct": 23.2
+    },
+    {
+     "ring": 532,
+     "solution_flow": 25.2,
+     "fir_pct": 24.1
+    },
+    {
+     "ring": 533,
+     "solution_flow": 25.3,
+     "fir_pct": 24.1
+    },
+    {
+     "ring": 534,
+     "solution_flow": 25.1,
+     "fir_pct": 23.6
+    },
+    {
+     "ring": 535,
+     "solution_flow": 24.5,
+     "fir_pct": 22.9
+    },
+    {
+     "ring": 536,
+     "solution_flow": 25.2,
+     "fir_pct": 23.8
+    },
+    {
+     "ring": 537,
+     "solution_flow": 25.1,
+     "fir_pct": 23.5
+    },
+    {
+     "ring": 538,
+     "solution_flow": 25.2,
+     "fir_pct": 23.7
+    },
+    {
+     "ring": 539,
+     "solution_flow": 25.1,
+     "fir_pct": 24.2
+    },
+    {
+     "ring": 540,
+     "solution_flow": 25.1,
+     "fir_pct": 23.7
+    }
+   ]
+  }
+ },
+ "E5": {
+  "id": "E5",
+  "owner": "muck",
+  "kind": "data",
+  "label": "渣土实验室 500–540",
+  "summary": "渣土实验室 500–540，共 3 环；该区间其余环未取样",
+  "rows": [
+   {
+    "ring": 519,
+    "slump_mm": 95
+   },
+   {
+    "ring": 526,
+    "slump_mm": 75
+   },
+   {
+    "ring": 533,
+    "slump_mm": 80
+   }
+  ],
+  "chart": {
+   "type": "bar",
+   "x": {
+    "key": "ring",
+    "label": "环号"
+   },
+   "series": [
+    {
+     "key": "slump_mm",
+     "label": "坍落度",
+     "unit": "mm"
+    }
+   ],
+   "rows": [
+    {
+     "ring": 519,
+     "slump_mm": 95
+    },
+    {
+     "ring": 526,
+     "slump_mm": 75
+    },
+    {
+     "ring": 533,
+     "slump_mm": 80
+    }
+   ]
+  }
+ },
+ "H1": {
+  "id": "H1",
+  "owner": "human",
+  "kind": "human",
+  "label": "现场确认",
+  "summary": "510 环开仓检查过，刀具正常，没有更换。"
+ },
+ "H2": {
+  "id": "H2",
+  "owner": "human",
+  "kind": "human",
+  "label": "现场确认",
+  "summary": "泡沫泵 518 环左右报过一次流量低，当班没处理。"
+ }
+}

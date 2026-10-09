@@ -5,11 +5,11 @@ import { Agent, type AgentEvent, type AgentMessage, type AgentTool } from '@eare
 import {
   AGENTS, SPECIALISTS,
   type AgentId, type ChartSpec, type CollabStats, type Conclusion, type Evidence, type Finding, type FindingCore,
-  type PayloadOf, type PeerMessage, type RunEvent, type RunEventType, type SpecialistId, type Stage,
+  type PayloadOf, type PeerMessage, type RingPoint, type RunEvent, type RunEventType, type SpecialistId, type Stage,
 } from '@tbm/shared'
 import { writeFileSync } from 'node:fs'
 import { Type, type TSchema } from 'typebox'
-import { RING_FROM, RING_TO, ringRange, WEAR_ALARM_MM } from '../src/data/scenario.ts'
+import { RING_FROM, RING_TO, RINGS, ringRange, WEAR_ALARM_MM } from '../src/data/scenario.ts'
 import { MODEL_ID, setupModel } from '../src/model.ts'
 
 const { model, streamFn } = setupModel()
@@ -432,6 +432,11 @@ console.log(`\n===== 统计（${t()}，事件 ${events.length} 条） =====`)
 console.log(stats)
 if (OUT) {
   writeFileSync(OUT, events.map((e) => JSON.stringify(e)).join('\n') + '\n')
-  console.log(`已写入 ${OUT}`)
+  // 前端回放模式用：证据详情（对应 GET /evidence/:eid）和左栏曲线（对应 GET /data/rings）
+  const dir = OUT.slice(0, OUT.lastIndexOf('/') + 1)
+  writeFileSync(`${dir}sample-evidence.json`, JSON.stringify(Object.fromEntries(evidence), null, 1))
+  const rings: RingPoint[] = RINGS.map((r) => ({ ring: r.ring, advanceSpeed: r.advanceSpeed, torque: r.torque, thrust: r.thrust, fir: r.fir, gravelContent: r.gravelContent }))
+  writeFileSync(`${dir}sample-rings.json`, JSON.stringify(rings))
+  console.log(`已写入 ${OUT}、${dir}sample-evidence.json、${dir}sample-rings.json`)
 }
 process.exit(0)

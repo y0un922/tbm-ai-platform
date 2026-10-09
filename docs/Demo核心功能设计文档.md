@@ -615,7 +615,11 @@ interface CollabStats {
 | `server/src/data/scenario.ts` + `scenario.check.ts` | 场景数据生成与 340 项自洽校验；`npm run check:data` | B、C |
 | `server/src/model.ts` | DeepSeek 接入（读环境变量或本机 pi 凭证） | C |
 | `server/spike/debate.ts` | 完整会商的可运行原型：提示词、数据工具、协作工具、应答分身、事件桥接。C 的正式实现以它为起点拆分 | C |
-| `web/dev/sample-run.jsonl` | 真实运行录制的事件样本（4834 条、143 秒），A 用它脱离后端开发 | A |
+| `packages/shared/src/api.ts` | REST 与 SSE 契约：路径、请求响应、状态码、帧格式、端口 | A、B |
+| `server/src/contract.ts` | B 与 C 之间的接口：编排入口、事件分工、场景数据 | B、C |
+| `web/dev/sample-run.jsonl` + `sample-evidence.json` + `sample-rings.json` | 真实运行录制的事件样本（107 秒），以及证据详情和曲线数据，A 用它们脱离后端开发 | A |
+
+**每个人的详细任务、接口边界和联调检查表见 [三人任务说明与联调约定.md](三人任务说明与联调约定.md)。**
 
 与第 7.1 节排期相比，D1 的契约和 D2 的模型实测已经完成，D3 的数据生成脚本也已完成，C 的协作原型（原计划 D4–D7）有了可运行的初版。建议 A 第一天就基于样本开工，B 按 CollabHub 接口实现正式的服务端，C 把原型拆成正式模块并补齐阶段硬性要求的检查。
 
