@@ -2,5 +2,9 @@
   "name": "tbm-demo",
   "private": true,
   "type": "module",
-  "workspaces": ["packages/shared", "server"]
+  "workspaces": [
+    "packages/shared",
+    "server",
+    "web"
+  ]
 }

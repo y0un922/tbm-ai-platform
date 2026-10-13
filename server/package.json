@@ -7,7 +7,8 @@
     "check:data": "tsx src/data/scenario.check.ts",
     "spike:concurrency": "tsx spike/concurrency.ts",
     "spike:debate": "tsx spike/debate.ts",
-    "record:sample": "tsx spike/debate.ts --out ../web/dev/sample-run.jsonl"
+    "record:sample": "tsx spike/debate.ts --out ../web/dev/sample-run.jsonl",
+    "spike:bridge": "tsx spike/live-bridge.ts"
   },
   "dependencies": {
     "@earendil-works/pi-agent-core": "^1.1.0",
