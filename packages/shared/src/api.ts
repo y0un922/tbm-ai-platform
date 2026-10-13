@@ -1,5 +1,5 @@
 // 前后端 REST / SSE 契约。前端只通过这里定义的接口和 events.ts 中的事件与后端交互。
-import type { Evidence } from './events.ts'
+import type { Evidence, RunTrigger } from './events.ts'
 import type { Stage } from './events.ts'
 
 export const API_PORT = 8787 // 后端监听 127.0.0.1:8787，前端开发服务器把 /api 代理过去
@@ -13,10 +13,15 @@ export interface ApiError {
 // POST /api/runs → 201
 // mode=live 真实调用模型；mode=replay 由后端按原始时间间隔回放 web/dev/sample-run.jsonl（不调模型，用于前后端联调和兜底排查）
 // 已有运行中的 run 时返回 409
+// question：仅 live 生效，作为发给各 Agent 的会商问题（≤ 500 字，超长返回 400）；缺省用场景默认问题。replay 忽略，问题沿用样本
+// trigger：后端原样写进 run.started（replay 也写，覆盖样本里的值）；缺省视为人工发起
 export interface CreateRunRequest {
   mode?: 'live' | 'replay' // 默认 live
   speed?: number // 仅 replay：回放倍速，默认 1
+  question?: string
+  trigger?: RunTrigger
 }
+export const MAX_QUESTION_LEN = 500
 export interface CreateRunResponse {
   runId: string
 }
@@ -55,6 +60,10 @@ export interface ReviewRequest {
   decision: 'approve' | 'reject'
   comment?: string
 }
+
+// POST /api/runs/:id/abort → 204
+// 中止运行：所有 Agent 停止，服务端发出 run.finished(aborted)。409：运行已结束
+// （无请求体）
 
 // GET /api/data/rings?from=500&to=540 → 200 RingPoint[]（左栏参数曲线，整体数据，不区分数据域）
 export interface RingPoint {

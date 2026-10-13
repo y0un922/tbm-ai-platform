@@ -201,7 +201,8 @@ agent.subscribe((e) => bridge(runId, 'muck', e))
 | 中央画布 | 协调在桌首主持，4 位专业 Agent 围坐，各自背后是只有自己能访问的数据源（带锁图标）。桌尾有一个白色的"现场"节点，平时是暗的，有人问它时才亮起。专业 Agent 之间的连线一开始不存在，**随交互逐渐长出来**，线越粗表示交流越多。桌子中央是共识区 | 点击节点，打开该 Agent 的详情抽屉；点击连线，查看两者之间的全部对话 |
 | 右栏：协作板 | 每条判断是一张卡片，下面挂着别人的反应（追问 / 质疑 / 赞同 / 补证）和本人的修正记录，置信度变化用动画表示 | 点击证据编号，查看原始数据 |
 | 右栏：会商记录 | 群聊形式，所有 Agent 间的消息按时间排列，带 @ 提及。给想逐句阅读的观众看 | — |
-| 底栏：协作时序 | 每个 Agent 一条泳道，跨泳道箭头表示谁对谁说了话 | 点击箭头，画布和右栏定位到对应时刻 |
+| 画布顶部：实时解说 | 大字号一句话：谁 · 做了什么 · 对谁 · 内容，例如"渣土 质疑 地质：降速比地层变化早了 4 环"；改口时注明"因为谁的证据" | — |
+| 底栏：刚刚发生 | 最近 6 件事的标签条，新的从右侧滑入（10/9 骨架评审后替换原"协作时序"泳道：泳道对门外汉信息量太低） | — |
 | 现场回答卡片 | Agent 向现场提问时，从画布底部升起：显示谁在问、为什么问（缺什么数据）、问题本身、选项按钮和输入框。提问的 Agent 节点外圈变成虚线等待环，其他节点照常工作 | 点选项或输入后提交 |
 | 节点详情抽屉（二级） | 该 Agent 的流式思考、工具调用卡片（内嵌迷你图）、提交过的判断 | 从右侧滑出，不遮挡画布中央 |
 
@@ -234,7 +235,7 @@ agent.subscribe((e) => bridge(runId, 'muck', e))
 |---|---|
 | 框架 | React 19 + Vite + TypeScript |
 | 样式 / 组件 | Tailwind v4 + shadcn/ui |
-| 画布 / 溯源图 | `@xyflow/react` 12（圆桌布局用固定坐标，溯源图用 `elkjs`），Animated SVG Edge 实现气泡飞行 |
+| 画布 / 溯源图 | 圆桌主画面用 SVG + 绝对定位自绘（固定坐标，SVG `animateMotion` 做光点飞行）；溯源图用 `@xyflow/react` 12 + `elkjs` |
 | 动效 | `motion` |
 | 详情抽屉中的思考 / 工具展示 | 拷贝 AI Elements 的 Reasoning / Tool / Shimmer 源码，改为由自有事件驱动 |
 | 图表 | Recharts |
@@ -254,7 +255,7 @@ interface Envelope<T extends string, D> { seq: number; ts: number; runId: string
 
 type RunEvent =
   // 运行与阶段
-  | Envelope<'run.started',       { scenarioId: string; question: string; model: string }>
+  | Envelope<'run.started',       { scenarioId: string; question: string; model: string; trigger?: RunTrigger }>  // trigger：人工 / 规则 / 定时 / 报警联动
   | Envelope<'stage.changed',     { stage: Stage; reason?: 'normal' | 'timeout' }>
   | Envelope<'snapshot.created',  { rings: [number, number]; series: SeriesRef[]; missing: string[] }>
   // 单个 Agent 内部（二级视图用）
@@ -310,7 +311,7 @@ interface CollabStats {
 | 方法 | 路径 | 说明 |
 |---|---|---|
 | GET | `/api/health` | 预检：DeepSeek 连通性、首 token 延迟、5 路并发是否正常 |
-| POST | `/api/runs` | `{ scenarioId, question }` → `{ runId }` |
+| POST | `/api/runs` | `{ mode?, speed?, question?, trigger? }` → `{ runId }`；question 仅 live 生效，trigger 写进 run.started |
 | GET | `/api/runs/:id/events` | SSE |
 | GET | `/api/runs/:id/evidence/:eid` | 证据原始数据 |
 | POST | `/api/runs/:id/review` | `{ version, decision, comment }` |

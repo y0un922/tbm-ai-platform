@@ -84,11 +84,19 @@ export interface CollabStats {
   signoffs: number
 }
 
+/** 会商由什么发起。前端随 POST /api/runs 提交，后端原样写进 run.started */
+export interface RunTrigger {
+  kind: 'manual' | 'rule' | 'schedule' | 'event' // 人工 / 数据规则 / 定时任务 / 报警联动
+  id: string // 触发器编号，人工发起为 'manual'
+  name: string // 例：推进速度持续下降
+  reason: string // 人工发起时为用户填写的原因；其他为命中条件说明，例：521 环起命中，523 环确认
+}
+
 // ---------- 事件 ----------
 
 interface Payloads {
   // 运行与阶段
-  'run.started': { scenarioId: string; title: string; question: string; model: string }
+  'run.started': { scenarioId: string; title: string; question: string; model: string; trigger?: RunTrigger } // trigger 缺省视为人工发起
   'stage.changed': { stage: Stage; reason?: 'normal' | 'timeout' }
   'snapshot.created': { rings: [number, number]; currentRing: number; sources: { owner: SpecialistId; label: string }[]; missing: string[] }
   // 单个 Agent 内部（二级视图）

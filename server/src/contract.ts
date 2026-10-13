@@ -15,7 +15,7 @@ export interface ScenarioData {
   ringRange(from: number, to: number): RingRow[]
   rings: [number, number] // 快照环号范围
   currentRing: number
-  question: string // 发给 Agent 的事件描述
+  question: string // 发给 Agent 的会商问题：CreateRunRequest.question，缺省为场景默认问题
   missing: string[] // 快照缺失项；ask_human 的 gap 必须从这里选
 }
 
